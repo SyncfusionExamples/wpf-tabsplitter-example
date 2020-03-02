@@ -1,0 +1,29 @@
+﻿<Window x:Class="TabSplitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:TabSplitter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="grid">
+        <syncfusion:TabSplitter Name="tabSplitter" Height="280" Width="400">
+            
+            <syncfusion:TabSplitterItem Header="Window1.xaml" Orientation="Horizontal" IsCollapsedBottomPanel="False">                
+                <syncfusion:TabSplitterItem.TopPanelItems>
+                    <syncfusion:SplitterPage Header="XAML">
+                        <Label Content="Xaml" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                    </syncfusion:SplitterPage>
+                </syncfusion:TabSplitterItem.TopPanelItems>
+
+                <syncfusion:TabSplitterItem.BottomPanelItems>
+                    <syncfusion:SplitterPage Header="Design">
+                        <Label Content="Design" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                    </syncfusion:SplitterPage>
+                </syncfusion:TabSplitterItem.BottomPanelItems>
+            </syncfusion:TabSplitterItem>
+            
+        </syncfusion:TabSplitter>    
+    </Grid>
+</Window>
